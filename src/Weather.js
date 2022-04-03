@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -13,7 +15,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       city: response.data.name,
-      date: "Fri | Feb 11",
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -51,16 +53,16 @@ export default function Weather(props) {
               <h1 id="name">
                 {weatherData.city} <i className="fas fa-umbrella"></i>
               </h1>
-              <p id="time">
-                <i className="fas fa-clock">
-                  <strong> 14:09</strong>
-                </i>
-              </p>
+
+              <FormattedTime />
             </div>
             <div className="card" id="info1" style={{ width: "13rem" }}>
               <div className="card-body">
                 <h5 className="card-title" id="main-day">
-                  <strong>{weatherData.date}</strong>
+                  <strong>
+                    {" "}
+                    <FormattedDate date={weatherData.date} />{" "}
+                  </strong>
                 </h5>
                 <h6 className="card-subtitle" id="first-day-description">
                   {weatherData.description}
