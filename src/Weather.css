@@ -1,0 +1,113 @@
+body {
+  padding-top: 10px;
+}
+div#mainBody {
+  padding-top: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 120px;
+}
+
+.btn.btn-outline-secondary.btn-light {
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+h2,
+h5,
+h6,
+input.form-control,
+small {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer {
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 100px;
+  border: none;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+}
+
+#search-city {
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+#search {
+  position: absolute;
+  top: 45px;
+  right: 320px;
+  background-color: white;
+}
+
+#current-button {
+  border-radius: 50px;
+  position: absolute;
+  top: 45px;
+  right: 270px;
+  padding: 6px 10px;
+  font-size: 20px;
+  border: none;
+  transition: all 300ms ease;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p#time {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px 0;
+  padding: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+div#info1 {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 100px;
+}
+
+.card-title {
+  font-size: 15px;
+}
