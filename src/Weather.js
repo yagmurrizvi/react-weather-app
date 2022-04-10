@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Weatherinfo from "./Weatherinfo";
+import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -10,9 +11,10 @@ export default function Weather(props) {
   function showWeather(response) {
     setweatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
-      description: response.data.weather[0].description,
+      description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
@@ -60,13 +62,11 @@ export default function Weather(props) {
                   >
                     <i className="fas fa-search-location"></i>
                   </button>
-                  <button type="button" id="current-button">
-                    <i className="fas fa-location-arrow"></i>
-                  </button>
                 </div>
               </div>
             </form>
-            <Weatherinfo data={weatherData} />
+            <WeatherInfo data={weatherData} />
+            <WeatherForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>

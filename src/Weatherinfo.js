@@ -3,7 +3,7 @@ import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherIcon from "./WeatherIcon";
 
-export default function Weatherinfo(props) {
+export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="current-info">

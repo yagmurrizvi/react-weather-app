@@ -1,0 +1,14 @@
+div#info2 {
+  padding: 5px 5px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 100px;
+}
+
+.col-sm-2 {
+  display: block;
+  margin: 25px auto;
+}
